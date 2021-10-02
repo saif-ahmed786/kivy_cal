@@ -14,12 +14,12 @@ class MyRoot(BoxLayout):
 
 
 
-class mycal(App):
+class AndCalculator(App):
     def build(self):
         return MyRoot()
 
 
 
-cal = mycal()
+andcalculator = AndCalculator()
 
-cal.run()
+andcalculator.run()
