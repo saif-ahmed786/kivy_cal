@@ -12,9 +12,10 @@ class MyRoot(BoxLayout):
         super().__init__() 
     def calc_symbol(self,symbol):
         self.calc_field.text += symbol
-
-
-
+    def clear(self):
+        self.calc_field.text = ""
+    def get_result(self):
+        self.calc_field.text = str(eval(self.calc_field.text))
 
 class AndCalculator(App):
     def build(self):
